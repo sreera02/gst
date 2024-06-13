@@ -1,0 +1,157 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 750px;
+    width: 100vw;
+    background-image: url("../images/key7.jpg");
+    border-bottom-right-radius: 20rem;
+}
+
+.logo {
+    float: left;
+    margin-left: 25px;
+    margin-top: 25px;
+    color: white;
+}
+
+.nav-original ul li {
+    list-style: none;
+    display: inline;
+    float: right;
+    margin-right: 4rem;
+    margin-top: 33px;
+    font-size: 1.15rem;
+    color: white;
+}
+
+ul li a {
+    color: white;
+    text-decoration-line: none;
+    list-style: none;
+}
+
+.b-hover:hover {
+    border-bottom: 5px solid white;
+}
+
+.nav-collapsed {
+    visibility: hidden;
+}
+
+.nav-collapsed ul {
+    position: absolute;
+    right: 0;
+    top: 80px;
+    background-color: inherit;
+    list-style: none;
+    padding: 1.25rem 1.25rem;
+    line-height: 2.5rem;
+    color: white;
+    backdrop-filter: blur(10px);
+    font-size: x-large;
+    z-index: 20;
+}
+
+
+.cloud {
+    float: right;
+    align-items: center;
+    position: absolute;
+    right:0;
+    top: 105px;
+}
+
+.menu {
+    display: none;
+}
+
+.toggle .nav-collapsed.active{
+    width: auto;
+    height: auto; 
+}
+
+@media screen and (max-width: 1024px){
+    .menu {
+        display: flex;
+        visibility: visible;
+        float: right;
+        margin-top: 25px;
+        margin-right: 25px;
+        background-color: white;
+    }
+    .nav-original {
+        display: none;
+    }
+    .nav-collapsed.active{
+        display:block;
+        visibility: visible;
+    }
+
+    .nav-collapsed.active li:hover {
+        background-color: grey;
+        padding: fill;
+    }
+
+}
+
+.cloud {
+    width: 58vw;
+    height: 70vh;
+}
+
+.hero-txt {
+    font-size: 7rem;
+    position: absolute;
+    left: 4vh;
+    top: 15vh;
+    color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-txt {
+        font-size: 5rem;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    .cloud {
+        visibility: hidden;
+    }
+}
+
+.hero-button {
+    padding: 1.2rem 2.25rem;
+    position: absolute;
+    top: 77vh;
+    left: 8vw;
+    background-color: lightskyblue;
+    color: black;
+    font-size: 1.12rem;
+    font:400;
+    border-radius: 1.5rem;
+    display: inline;
+}
+
+.arrow {
+    position: relative;
+    margin-bottom: -8px;
+}
+
+.hero-button:hover{
+    transform: translateX(5px);
+    background-color: rgb(169, 219, 215);
+}
+
+.services {
+    height: 90vh;
+    width: cover;
+    background-color: azure;
+}
