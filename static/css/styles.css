@@ -265,6 +265,7 @@ ul li a {
     left: 55%;
     width: auto;
     flex-wrap: wrap;
+    line-height: 5rem;
 }
 
 .aboutlist li {
@@ -280,6 +281,7 @@ ul li a {
     height: 45px;
     position: absolute;
     left:-4%;
+    line-height: 2rem;
     display: inline-block;
     flex-wrap: nowrap;
 }
@@ -292,7 +294,13 @@ ul li a {
 
     .containlist {
         position:absolute;
+        line-height: 3.75rem;
 
+    }
+
+    .list-style-img {
+        position: absolute;
+        left:-18%;
     }
 
     @media screen and (max-width: 740px) {
@@ -300,7 +308,9 @@ ul li a {
             position: absolute;
             left: 4rem;
             top: 50vh;
-            height: 300px;
+            height: 250px;
+            font-size: 0.8rem;
+            line-height: 2.75rem;
         }
 
         .list-style-img {
@@ -311,16 +321,20 @@ ul li a {
        
     }
 }
+
  .aboutbtn {
+    display: flex;
+    line-height: 2.75rem;
     background-color: inherit;
-    padding: 15px 20px;
     border: rgb(169, 219, 215) solid 8px;
     text-decoration: none;
     border-radius: 1rem;
     color: rgb(169, 219, 215);
-    position: absolute;
-    top: 85%;
-    left: 45%;
+    position: relative;
+    top: 1rem;
+    left: 6rem;
+    padding: 0px 20px;
+    width:fit-content;
 }
 
 .aboutbtn:hover {
