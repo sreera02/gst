@@ -270,53 +270,51 @@ ul li a {
 
 .about {
     position: relative;
-    height: 43rem;
+    height: 33rem;
     width: cover;
     background-color: black;
-    margin: 0;
-    contain:content;
-    justify-content: space-between;
+    place-items: contain;
+    justify-content: space-around;
 }
 
 .about h1 {
     display: flex;
-    float: right;
-    margin-right: 4rem;
-    margin-top: 1.2rem;
+    width: 100%;
     color: white;
     font-size: 3.3rem;
     z-index: 10;
 }
 
 .aboutimg {
-    width: 55rem;
-    height: 50rem;
     display: flex;
-    float: left;
-    margin-left: -4rem;
-    margin-top: -8rem;
-    position: absolute;
-    margin: 0;
+    float: right;
+    height: 33rem;
+    width: 33rem; 
+    margin-right: 8rem;   
 }
 
-.containlist .aboutlist{
+.containlist{
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    left: 63%;
-    top: 13rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4rem;
+    top: 6rem;
     width: 30rem;
     line-height: normal;
     margin-top: -7rem;
+    position: absolute;
 }
 
-.aboutlist li {
+.aboutlist {
+    position: relative;
     color: white;
     list-style: none;
     font-size: 2rem;
-    display: inline;
     flex-wrap: wrap;
-    left:-4rem;
+    left:4rem;
+    top: 7rem;
     z-index: 10;
 }
 
@@ -333,17 +331,14 @@ ul li a {
 
 @media screen and (max-width: 1024px){
 
-    .aboutlist {
-        display: flex;
-    }
 
-
-    .containlist .aboutbtn{
+   .aboutbtn{
         display: flex;
         position: relative;
-        margin-top: 16rem;
+        float:left;
+        flex-wrap: wrap;
         z-index: 40;
-
+        top: 13rem;
     }
 
     .list-style-img {
@@ -351,15 +346,14 @@ ul li a {
         left:-3rem;
     }
 
+    .aboutlist {
+        position: absolute;
+        left: 4rem;
+        top: 4rem;
+    }
+
+
     @media screen and (max-width: 740px) {
-        .containlist .aboutlist {
-            display: flex;
-            float: right;
-            left: 2rem;
-            top: 10rem;
-            font-size: 0.8rem;
-            width: auto;
-        }
 
         .list-style-img {
             position: relative;
@@ -368,16 +362,20 @@ ul li a {
             z-index: 0;
         }
 
-        .containlist .aboutbtn {
+        .aboutbtn {
             display: flex;
-            margin-top: 20rem;
+            flex-wrap: wrap;
+            position: relative;
+            top: 15rem;
+            left: 12rem;
             z-index: 40;
         }
        
     }
 }
 
- .containlist  .aboutbtn {
+ .aboutbtn {
+    position: absolute;
     background-color: inherit;
     border: rgb(169, 219, 215) solid 8px;
     text-decoration: none;
@@ -386,9 +384,8 @@ ul li a {
     padding: 15px 20px;
     width:fit-content;
     display: flex;
-    float: right;
-    margin-right: 10rem;
-    margin-top: 14rem;
+    top: 28rem;
+    left: 3.5rem;
     z-index: 40;
 }
 
