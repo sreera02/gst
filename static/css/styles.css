@@ -62,10 +62,11 @@ ul li a {
 
 .cloud {
     float: right;
-    align-items: center;
     position: absolute;
     right:0;
     top: 105px;
+    width: 8rem;
+    height: 8rem;
 }
 
 .menu {
@@ -102,15 +103,26 @@ ul li a {
 }
 
 .cloud {
-    width: 58vw;
-    height: 70vh;
+    width: 45rem;
+    height: 30rem;
+    margin-right: 8rem;
+    left: 38rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .cloud {
+        top: 10rem;
+        left: 30rem;
+        width: 30rem;
+        height: 20rem;
+    }
 }
 
 .hero-txt {
     font-size: 7rem;
     position: absolute;
-    left: 4vh;
-    top: 15vh;
+    left: 3rem;
+    top: 9rem;
     color: white;
 }
 
@@ -120,9 +132,9 @@ ul li a {
     }
 
     .cloud {
-        width: 50vw;
-        height: 50vh;
-        left: 40vw;
+        width: 30rem;
+        height: 20rem;
+        left: 25rem;
     }
 
 }
@@ -131,20 +143,21 @@ ul li a {
     .cloud {
         visibility: hidden;
     }
+
 }
 
 .hero-button {
     padding: 1.2rem 2.25rem;
     position: absolute;
-    top: 70%;
-    left: 8vw;
+    top: 35rem;
+    left: 3rem;
     background-color: lightskyblue;
     color: black;
     font-size: 1.12rem;
-    font:400;
     border-radius: 1.5rem;
     display: inline;
     text-decoration: none;
+    width:auto;
 }
 
 .arrow {
@@ -163,6 +176,7 @@ ul li a {
     position: relative;
     height: auto;
     width: 100vw;
+    z-index: 10;
 }
 
 .serviceshead {
@@ -189,6 +203,10 @@ ul li a {
     margin-bottom: 10%;
 }
 
+.scone:hover {
+    transform: scale(1.25);
+}
+
 .scone .scone-head {
     background-color: burlywood;
     position: relative;
@@ -204,6 +222,10 @@ ul li a {
     height:400px;
     position: relative;
     margin-bottom: 10%;
+}
+
+.sctwo:hover {
+    transform: scale(1.25);
 }
 
 .sctwo .sctwo-head {
@@ -223,6 +245,10 @@ ul li a {
     margin-bottom: 10%;
 }
 
+.scthree:hover {
+    transform: scale(1.25);
+}
+
 .scthree .scthree-head {
     background-color: gold;
     position: relative;
@@ -234,8 +260,8 @@ ul li a {
 
 .webdev {
     position: relative;
-    margin-left: 15%;
-    margin-top: 2%;
+    margin-left: 2rem;
+    margin-top: 1.4rem;
     font-size: 1.3rem;
     align-items: center;
 }
@@ -244,37 +270,44 @@ ul li a {
 
 .about {
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    height: 43rem;
+    width: cover;
     background-color: black;
     margin: 0;
     contain:content;
+    justify-content: space-between;
 }
 
 .about h1 {
     display: flex;
     float: right;
-    margin-right: 21%;
-    margin-top: 2%;
+    margin-right: 4rem;
+    margin-top: 1.2rem;
     color: white;
     font-size: 3.3rem;
+    z-index: 10;
 }
 
 .aboutimg {
-    width: 52vw;
-    height: 58vw;
+    width: 55rem;
+    height: 50rem;
+    display: flex;
+    float: left;
+    margin-left: -4rem;
+    margin-top: -8rem;
     position: absolute;
-    top: 0%;
-    left: -4%;
+    margin: 0;
 }
 
-.containlist{
-    position:relative;
-    top: 25%;
-    left: 55%;
-    width: auto;
+.containlist .aboutlist{
+    display: flex;
     flex-wrap: wrap;
-    line-height: 5rem;
+    position: relative;
+    left: 63%;
+    top: 13rem;
+    width: 30rem;
+    line-height: normal;
+    margin-top: -7rem;
 }
 
 .aboutlist li {
@@ -283,75 +316,86 @@ ul li a {
     font-size: 2rem;
     display: inline;
     flex-wrap: wrap;
+    left:-4rem;
+    z-index: 10;
 }
 
 .list-style-img {
     width: 45px;
     height: 45px;
-    position: absolute;
-    left:-4%;
-    line-height: 2rem;
+    position: relative;
+    left: -3rem;
+    top: 2.4rem;
     display: inline-block;
     flex-wrap: nowrap;
+    z-index: 30;
 }
 
 @media screen and (max-width: 1024px){
 
     .aboutlist {
-        top: 4rem;
+        display: flex;
     }
 
 
-    .containlist {
-        position:absolute;
-        line-height: 3.75rem;
+    .containlist .aboutbtn{
+        display: flex;
+        position: relative;
+        margin-top: 16rem;
+        z-index: 40;
 
     }
 
     .list-style-img {
-        position: absolute;
-        left:-18%;
+        position: relative;
+        left:-3rem;
     }
 
     @media screen and (max-width: 740px) {
-        .containlist {
-            position: absolute;
-            left: 4rem;
-            top: 50vh;
-            height: 250px;
+        .containlist .aboutlist {
+            display: flex;
+            float: right;
+            left: 2rem;
+            top: 10rem;
             font-size: 0.8rem;
-            line-height: 2.75rem;
+            width: auto;
         }
 
         .list-style-img {
-            position: absolute;
-            left: -13%;
+            position: relative;
+            left: -2rem;
             display: inline-block;
+            z-index: 0;
+        }
+
+        .containlist .aboutbtn {
+            display: flex;
+            margin-top: 20rem;
+            z-index: 40;
         }
        
-        .aboutimg {
-            top:15%;
-        }
     }
 }
 
- .aboutbtn {
-    display: flex;
-    line-height: 2.75rem;
+ .containlist  .aboutbtn {
     background-color: inherit;
     border: rgb(169, 219, 215) solid 8px;
     text-decoration: none;
     border-radius: 1rem;
     color: rgb(169, 219, 215);
-    position: relative;
-    top: 1rem;
-    left: 6rem;
-    padding: 0px 20px;
+    padding: 15px 20px;
     width:fit-content;
+    display: flex;
+    float: right;
+    margin-right: 10rem;
+    margin-top: 14rem;
+    z-index: 40;
 }
 
 .aboutbtn:hover {
     color: black;
     background-color: lightblue;
 }
+
+/* Footer */
 
