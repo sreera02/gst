@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: wrap;
 }
 
 .hero {
@@ -369,6 +370,15 @@ ul li a {
             top: 15rem;
             left: 12rem;
             z-index: 40;
+        }
+
+        .aboutlist {
+            line-height: 1.7rem;
+            position: absolute;
+            top: 6.5rem;
+            overflow: wrap;
+            left: 0rem;
+            width: 280px;
         }
        
     }
